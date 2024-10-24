@@ -1,0 +1,213 @@
+{
+  "dump_timestamp": "20241024_063100",
+  "total_events": 8,
+  "token_filter": null,
+  "events": [
+    {
+      "event": "User logged in",
+      "time": 1708645331,
+      "_received_at": "2024-10-24T06:25:17.399535",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "event": "User logged in",
+      "time": 1708645331,
+      "_received_at": "2024-10-24T06:25:20.812962",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "time": 1708645331,
+      "host": "web-server-01",
+      "source": "otel",
+      "sourcetype": "otel:trace",
+      "event": {
+        "name": "HTTP GET /api/users",
+        "context": {
+          "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+          "span_id": "00f067aa0ba902b7",
+          "trace_flags": "01",
+          "trace_state": ""
+        },
+        "parent_id": "",
+        "kind": 2,
+        "start_time_unix_nano": 1708645331000000000,
+        "end_time_unix_nano": 1708645331150000000,
+        "attributes": {
+          "http.method": "GET",
+          "http.url": "/api/users",
+          "http.status_code": 200
+        },
+        "events": [],
+        "links": [],
+        "status": {
+          "status_code": "OK"
+        }
+      },
+      "_received_at": "2024-10-24T06:30:25.162283",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "time": 1708645331,
+      "host": "web-server-01",
+      "source": "otel",
+      "sourcetype": "otel:trace",
+      "event": {
+        "name": "HTTP GET /api/users",
+        "context": {
+          "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+          "span_id": "00f067aa0ba902b7",
+          "trace_flags": "01",
+          "trace_state": ""
+        },
+        "parent_id": "",
+        "kind": 2,
+        "start_time_unix_nano": 1708645331000000000,
+        "end_time_unix_nano": 1708645331150000000,
+        "attributes": {
+          "http.method": "GET",
+          "http.url": "/api/users",
+          "http.status_code": 200
+        },
+        "events": [],
+        "links": [],
+        "status": {
+          "status_code": "OK"
+        }
+      },
+      "_received_at": "2024-10-24T06:30:28.087518",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "time": 1708645331,
+      "host": "web-server-01",
+      "source": "otel",
+      "sourcetype": "otel:trace",
+      "event": {
+        "name": "HTTP GET /api/users",
+        "context": {
+          "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+          "span_id": "00f067aa0ba902b7",
+          "trace_flags": "01",
+          "trace_state": ""
+        },
+        "parent_id": "",
+        "kind": 2,
+        "start_time_unix_nano": 1708645331000000000,
+        "end_time_unix_nano": 1708645331150000000,
+        "attributes": {
+          "http.method": "GET",
+          "http.url": "/api/users",
+          "http.status_code": 200
+        },
+        "events": [],
+        "links": [],
+        "status": {
+          "status_code": "OK"
+        }
+      },
+      "_received_at": "2024-10-24T06:30:29.469056",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "time": 1708645331,
+      "host": "web-server-01",
+      "source": "otel",
+      "sourcetype": "otel:trace",
+      "event": {
+        "name": "HTTP GET /api/users",
+        "context": {
+          "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+          "span_id": "00f067aa0ba902b7",
+          "trace_flags": "01",
+          "trace_state": ""
+        },
+        "parent_id": "",
+        "kind": 2,
+        "start_time_unix_nano": 1708645331000000000,
+        "end_time_unix_nano": 1708645331150000000,
+        "attributes": {
+          "http.method": "GET",
+          "http.url": "/api/users",
+          "http.status_code": 200
+        },
+        "events": [],
+        "links": [],
+        "status": {
+          "status_code": "OK"
+        }
+      },
+      "_received_at": "2024-10-24T06:30:30.150408",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "time": 1708645331,
+      "host": "web-server-01",
+      "source": "otel",
+      "sourcetype": "otel:trace",
+      "event": {
+        "name": "HTTP GET /api/users",
+        "context": {
+          "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+          "span_id": "00f067aa0ba902b7",
+          "trace_flags": "01",
+          "trace_state": ""
+        },
+        "parent_id": "",
+        "kind": 2,
+        "start_time_unix_nano": 1708645331000000000,
+        "end_time_unix_nano": 1708645331150000000,
+        "attributes": {
+          "http.method": "GET",
+          "http.url": "/api/users",
+          "http.status_code": 200
+        },
+        "events": [],
+        "links": [],
+        "status": {
+          "status_code": "OK"
+        }
+      },
+      "_received_at": "2024-10-24T06:30:30.734971",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "time": 1708645331,
+      "host": "web-server-01",
+      "source": "otel",
+      "sourcetype": "otel:trace",
+      "event": {
+        "name": "HTTP GET /api/users",
+        "context": {
+          "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+          "span_id": "00f067aa0ba902b7",
+          "trace_flags": "01",
+          "trace_state": ""
+        },
+        "parent_id": "",
+        "kind": 2,
+        "start_time_unix_nano": 1708645331000000000,
+        "end_time_unix_nano": 1708645331150000000,
+        "attributes": {
+          "http.method": "GET",
+          "http.url": "/api/users",
+          "http.status_code": 200
+        },
+        "events": [],
+        "links": [],
+        "status": {
+          "status_code": "OK"
+        }
+      },
+      "_received_at": "2024-10-24T06:30:31.285879",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    }
+  ]
+}

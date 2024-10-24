@@ -1,0 +1,6 @@
+### OpenTelemetry trace through HEC
+POST http://localhost:8088/services/collector
+Authorization: Splunk your-hec-token-here
+Content-Type: application/json
+
+{"time": 1708645331, "host": "web-server-01", "source": "otel", "sourcetype": "otel:trace", "event": {"name": "HTTP GET /api/users", "context": {"trace_id": "4bf92f3577b34da6a3ce929d0e0e4736", "span_id": "00f067aa0ba902b7", "trace_flags": "01", "trace_state": ""}, "parent_id": "", "kind": 2, "start_time_unix_nano": 1708645331000000000, "end_time_unix_nano": 1708645331150000000, "attributes": {"http.method": "GET", "http.url": "/api/users", "http.status_code": 200}, "events": [], "links": [], "status": {"status_code": "OK"}}}

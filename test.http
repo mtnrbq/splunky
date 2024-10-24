@@ -1,0 +1,81 @@
+### 1. Basic event with minimal fields
+POST http://localhost:8088/services/collector
+Authorization: Splunk your-hec-token-here
+Content-Type: application/json
+
+{"event": "User logged in", "time": 1708645331}
+
+### 2. Event with more metadata and fields
+POST http://localhost:8088/services/collector
+Authorization: Splunk your-hec-token-here
+Content-Type: application/json
+
+{"time": 1708645331, "host": "webserver-01", "source": "access_logs", "sourcetype": "nginx:access", "index": "main", "event": {"action": "login", "user": "jdoe", "ip": "192.168.1.100", "status": "success", "browser": "Chrome", "duration_ms": 145}}
+
+### 3. Multiple events in a single request (batch)
+POST http://localhost:8088/services/collector
+Authorization: Splunk your-hec-token-here
+Content-Type: application/json
+
+{"time": 1708645331, "host": "webserver-01", "source": "access_logs", "event": "GET /api/v1/users 200 145ms"}
+{"time": 1708645332, "host": "webserver-01", "source": "access_logs", "event": "POST /api/v1/login 401 87ms"}
+
+### 4. Using X-Splunk-Token header instead of Authorization
+POST http://localhost:8088/services/collector
+X-Splunk-Token: your-hec-token-here
+Content-Type: application/json
+
+{"event": "User logged in", "time": 1708645331}
+
+### 5. Sending structured data with metrics
+POST http://localhost:8088/services/collector
+Authorization: Splunk your-hec-token-here
+Content-Type: application/json
+
+{"time": 1708645331, "host": "webserver-01", "source": "system_metrics", "sourcetype": "metrics", "event": "metric", "fields": {"metric_name:cpu_usage": 45.2, "metric_name:memory_usage": 78.5, "metric_name:disk_usage": 62.3, "server_role": "web", "datacenter": "us-east-1"}}
+
+### Token Management Examples remain the same as they're single JSON objects
+
+### List all tokens
+GET http://localhost:8088/tokens
+
+### Create new token
+POST http://localhost:8088/tokens
+Content-Type: application/json
+
+{
+    "index": "custom",
+    "description": "Custom token for testing"
+}
+
+### Get token details
+GET http://localhost:8088/tokens/your-hec-token-here
+
+### Update token
+PATCH http://localhost:8088/tokens/your-hec-token-here
+Content-Type: application/json
+
+{
+    "disabled": true,
+    "description": "Updated description"
+}
+
+### Delete token
+DELETE http://localhost:8088/tokens/your-hec-token-here
+
+### Event Management Examples
+
+### Get all events
+GET http://localhost:8088/events
+
+### Get events for specific token
+GET http://localhost:8088/events?token=your-hec-token-here
+
+### Clear all events
+DELETE http://localhost:8088/events
+
+### Dump events to file
+POST http://localhost:8088/events/dump
+
+### List all dumps
+GET http://localhost:8088/events/dumps

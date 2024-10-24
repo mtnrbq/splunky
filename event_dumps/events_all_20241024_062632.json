@@ -1,0 +1,21 @@
+{
+  "dump_timestamp": "20241024_062632",
+  "total_events": 2,
+  "token_filter": null,
+  "events": [
+    {
+      "event": "User logged in",
+      "time": 1708645331,
+      "_received_at": "2024-10-24T06:25:17.399535",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    },
+    {
+      "event": "User logged in",
+      "time": 1708645331,
+      "_received_at": "2024-10-24T06:25:20.812962",
+      "_token": "your-hec-token-here",
+      "_index": "main"
+    }
+  ]
+}

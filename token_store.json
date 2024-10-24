@@ -1,0 +1,18 @@
+{
+  "your-hec-token-here": {
+    "token": "your-hec-token-here",
+    "index": "main",
+    "description": "Default main token",
+    "created_at": "2024-10-24 06:17:12.969118",
+    "last_used": "2024-10-24 06:30:31.285879",
+    "disabled": false
+  },
+  "test-token": {
+    "token": "test-token",
+    "index": "test",
+    "description": "Test token",
+    "created_at": "2024-10-24 06:17:12.970117",
+    "last_used": null,
+    "disabled": false
+  }
+}
